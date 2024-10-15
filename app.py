@@ -288,26 +288,15 @@ def render_live_clock(timezone_offset, is_daytime):
         is_daytime (bool): Flag indicating if it's daytime.
     """
     # Define CSS styles for dark and light modes
-    if is_daytime:
-        theme = """
-            #live-clock {
-                color: #000000;
-                background-color: #FFFFFF;
-                margin-left: -8px;
-                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                display: inline-block;
-            }
-        """
-    else:
-        theme = """
-            #live-clock {
-                color: #FFFFFF;
-                background-color: #333333;
-                margin-left: -8px;
-                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                display: inline-block;
-            }
-        """
+    theme = """
+        #live-clock {
+            color: #000000;
+            background-color: #FFFFFF;
+            margin-left: -8px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: inline-block;
+        }
+    """
 
     # JavaScript code to display live clock with desired format
     clock_html = f"""

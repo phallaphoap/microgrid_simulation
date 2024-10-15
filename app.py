@@ -743,7 +743,7 @@ def main():
             # -------------------------------
             # Energy Transfers Visualization
             # -------------------------------
-            st.header("🔄 Visual Representation of Energy Transfers")
+            st.header("🔄 Energy Transfers Predictions")
 
             # Ensure 'timestamp' column is a list of datetime.datetime objects
             timestamps_list = list(energy_balance_df['timestamp'])

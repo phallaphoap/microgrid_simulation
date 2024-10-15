@@ -13,7 +13,10 @@ import streamlit.components.v1 as components
 load_dotenv()
 
 # Access the OpenWeatherMap API key
-OPENWEATHERMAP_API_KEY = os.getenv('OPENWEATHERMAP_API_KEY')
+# OPENWEATHERMAP_API_KEY = os.getenv('OPENWEATHERMAP_API_KEY')
+
+# Access the OpenWeatherMap API key from secrets
+OPENWEATHERMAP_API_KEY = st.secrets["OPENWEATHERMAP_API_KEY"]
 
 # Streamlit page configuration
 st.set_page_config(page_title="Microgrid Simulation", layout="wide")
